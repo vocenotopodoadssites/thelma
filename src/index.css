@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  /* Lilac / Lavender - Calm boutique primary brand colors */
+  --color-brand-50: #f7f4fc;
+  --color-brand-100: #f1ebd9; /* warm ivory accent */
+  --color-brand-200: #dfd2f1;
+  --color-brand-300: #c8b3e7;
+  --color-brand-400: #b59ed2; /* exact logo lavender */
+  --color-brand-500: #9072be; /* main brand interactive */
+  --color-brand-600: #7555a6;
+  --color-brand-700: #5f428d;
+  --color-brand-800: #4a3473;
+  --color-brand-900: #332053; /* deep elegant midnight purple */
+  --color-brand-950: #1b0f30;
+  
+  /* Sage Green - Healing, spine, natural organic secondary brand color mapping */
+  --color-gold-50: #fafaf7;
+  --color-gold-100: #f0f4ee; /* very light sage mist background */
+  --color-gold-200: #dfebd9;
+  --color-gold-300: #c3deb8;
+  --color-gold-400: #9fc396;
+  --color-gold-500: #8ebf87; /* logo therapy green */
+  --color-gold-600: #71a369;
+  --color-gold-700: #588350;
+  --color-gold-800: #45663f;
+  --color-gold-900: #395234;
+  --color-gold-950: #1e2c1b;
+}
+
+/* Custom scrollbar and premium elements */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-50);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-300);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-500);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF8F5; /* Warm premium Sand-Beige/Cream background */
+    color: #332053; /* Dark purple/lavender deep gray for reading comfort */
+    overflow-x: hidden;
+  }
+}

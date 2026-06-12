@@ -1,0 +1,6 @@
+{
+  "name": "Fisioterapia Dra. Thelma Soares - Aclimação",
+  "description": "Clínica de fisioterapia premium e personalizada no bairro Aclimação, São Paulo - SP. Alívio de dores, reabilitação motora e fortalecimento com a Dra. Thelma dos Santos Soares.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
