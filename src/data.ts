@@ -8,177 +8,135 @@ import { Service, Testimonial, Benefit, FaqItem, ProfessionalData } from './type
 export const therapistData: ProfessionalData = {
   name: "Dra. Thelma dos Santos Soares",
   role: "Fisioterapeuta Responsável",
-  crefito: "CREFITO-3 / 248.915-F",
+  crefito: "CREFITO-3 / 21.590-F",
   specialties: [
-    "Fisioterapia Traumato-Ortopédica",
-    "Reabilitação de Coluna e Dores Crônicas",
-    "Fisioterapia Geriátrica e Mobilidade",
-    "RPG (Reeducação Postural Global)",
-    "Liberação Miofascial e Terapias Manuais"
+    "Reabilitação de Coluna Vertebral & Hérnia de Disco",
+    "Fisioterapia traumato-ortopédica clássica e esportiva",
+    "Tratamento de Articulações (Ombro, Joelho e Quadril)",
+    "Avaliação Biomecânica & Postural Detalhada",
+    "Exercícios Terapêuticos Personalizados & RPG"
   ],
-  bio: "Com mais de 10 anos de experiência clínica, a Dra. Thelma dos Santos Soares é especialista em ajudar pessoas a recuperarem sua mobilidade e eliminarem dores crônicas sem necessidade de intervenções cirúrgicas ou medicamentos contínuos. Com atendimento humanizado e focado em resultados reais, sua clínica localizada no elegante bairro da Aclimação é referência de bem-estar e reabilitação de alto padrão em São Paulo.",
+  bio: "Com mais de 10 anos de sólida experiência clínica, a Dra. Thelma Soares desenvolveu uma metodologia focada em resultados rápidos e duradouros. No elegante consultório na Aclimação, cada paciente recebe atendimento 100% individual e exclusivo do início ao fim. Especializada no tratamento de dores na coluna, articulações e reabilitação musculoesquelética, ela dispensa abordagens genéricas ou puramente passivas, unindo avaliação profunda e exercícios ativos direcionados para devolver a sua liberdade de movimento sem remédios ou cirurgias.",
   experienceYears: 10
 };
 
 export const benefitsList: Benefit[] = [
   {
-    id: "alivio_dores",
-    title: "Alívio de Dores Crônicas",
-    description: "Métodos avançados para sanar a causa raiz de dores na coluna, articulações, músculos e nervos.",
-    icon: "Activity"
-  },
-  {
-    id: "recup_motora",
-    title: "Recuperação Motora",
-    description: "Programas personalizados para reestabelecer amplitudes de movimento, equilíbrio e independência.",
-    icon: "Sparkles"
-  },
-  {
-    id: "atend_personalizado",
-    title: "Atendimento Individualizado",
-    description: "Sessões dedicadas integralmente a você, com plano de tratamento adaptado às suas necessidades.",
+    id: "atend_individual",
+    title: "Atendimento 100% Individual",
+    description: "Sessões inteiramente exclusivas com a Dra. Thelma. Sem dividir a atenção com outros pacientes ou delegar exercícios.",
     icon: "UserCheck"
   },
   {
-    id: "melhora_vida",
-    title: "Melhora da Qualidade de Vida",
-    description: "Restitua sua disposição diária, sono reparador e a liberdade de realizar movimentos sem limitações.",
-    icon: "Heart"
+    id: "avaliacao_profunda",
+    title: "Avaliação Detalhada de 1 Hora",
+    description: "Mapeamento biomecânico completo para descobrir a causa raiz mecânica e postural das suas dores em vez de apenas tratar sintomas.",
+    icon: "ClipboardCheck"
   },
   {
-    id: "tecnicas_atualizadas",
-    title: "Técnicas Científicas Modernas",
-    description: "Terapias manuais, exercícios terapêuticos baseados em evidências e tecnologia a serviço da sua saúde.",
-    icon: "ShieldCheck"
+    id: "especialidade_coluna",
+    title: "Foco em Coluna e Articulações",
+    description: "Soluções precisas e resolutivas para hérnias de disco, lombalgias, dores severas de joelho, quadril, ombros e cervicalgias.",
+    icon: "Activity"
   },
   {
-    id: "ambiente_acolhedor",
-    title: "Ambiente Premium & Acolhedor",
-    description: "Um espaço seguro, extremamente confortável e planejado para que você tenha uma sessão perfeita.",
+    id: "exercicios_ativos",
+    title: "Exercícios Personalizados",
+    description: "Fisioterapia ativa moderna e inteligente. Prescrição exata de movimentos terapêuticos e fortalecimento, fugindo do 'choquinho padrão'.",
+    icon: "Dumbbell"
+  },
+  {
+    id: "consultorio_aclimacao",
+    title: "Consultório na Aclimação",
+    description: "Um espaço privativo, acolhedor e com excelente localização no coração do bairro, garantindo máximo conforto acústico e térmico.",
     icon: "Home"
+  },
+  {
+    id: "experiencia_clinica",
+    title: "Sólida Experiência Clínica",
+    description: "Mais de 10 anos de dedicação exclusiva à reabilitação musculoesquelética complexa com foco total na resolução definitiva da queixa.",
+    icon: "Award"
   }
 ];
 
 export const servicesList: Service[] = [
   {
-    id: "fisioterapia-dor",
-    title: "Fisioterapia para Dor",
-    category: "Terapias de Dor",
-    icon: "FlameKindling", // Will represent relief of heat/inflammation
+    id: "avaliacao-detalhada",
+    title: "Avaliação Biomecânica Detalhada",
+    category: "Diagnóstico",
+    icon: "ClipboardCheck",
     image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=600&q=80",
-    description: "Diagnóstico preciso e técnicas de terapias manuais integradas para cessar dores crônicas ou agudas.",
+    description: "Sessão inicial individual de 1 hora dedicada a mapear minuciosamente suas disfunções posturais, testes de força muscular, amplitude articular e hábitos diários.",
     details: [
-      "Tratamento de enxaquecas tensionais e fibromialgia",
-      "Eletroterapia e termoterapia de ponta",
-      "Técnicas de agulhamento a seco (Dry Needling)",
-      "Exercícios terapêuticos de alívio rápido"
-    ]
-  },
-  {
-    id: "reabilitacao-motora",
-    title: "Reabilitação Motora",
-    category: "Reabilitação",
-    icon: "Orbit",
-    image: "/src/assets/images/treatment_session_1781281850678.jpg",
-    description: "Recupere o controle muscular, a coordenação, a força e o equilíbrio perdidos por lesões ou limitações.",
-    details: [
-      "Reabilitação neurológica leve e ortopédica",
-      "Exercícios progressivos de coordenação motora",
-      "Treinamento funcional de marcha e equilíbrio",
-      "Prevenção de quedas e ganho de força"
+      "Mapeamento mecânico e postural detalhado de 60 minutos",
+      "Identificação precisa da causa raiz mecânica e postural de dores complexas",
+      "Testes específicos de mobilidade e estabilidade articular",
+      "Entrega do plano de tratamento personalizado e estimativa de alta"
     ]
   },
   {
     id: "tratamento-coluna",
-    title: "Tratamento de Coluna",
+    title: "Reabilitação Especializada de Coluna",
     category: "Coluna Vertebral",
     icon: "FileHeart",
     image: "https://images.unsplash.com/photo-1597764690523-15bea4c581c9?auto=format&fit=crop&w=600&q=80",
-    description: "Abordagem especializada para hérnias de disco, desvios posturais e desgastes nas vértebras.",
+    description: "Abordagem focada e sem pressa para hérnias de disco, lombalgias crônicas, cervicalgias e desvios, descomprimindo articulações dolorosas de forma segura.",
     details: [
-      "Tratamento clínico especializado de hérnia de disco",
-      "Reeducação Postural Global (RPG)",
-      "Terapia manual osteopática e alongamento axial",
-      "Desintoxicação postural das articulações"
+      "Tratamento clínico avançado para Hérnia de Disco (coluna lombar e cervical)",
+      "Combate de Lombalgia crônica que impede de sentar ou levantar com conforto",
+      "Descompressão articular manual e técnicas posturais integradas",
+      "Restauro da mobilidade vertebral e reabsorção inflamatória segura"
     ]
   },
   {
-    id: "tratamento-lombalgia",
-    title: "Tratamento de Lombalgia",
-    category: "Coluna Vertebral",
-    icon: "TrendingDown",
-    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=600&q=80",
-    description: "Soluções reais para dores na região lombar que impedem você de trabalhar, sentar ou levantar com facilidade.",
+    id: "reabilitacao-musculoesqueletica",
+    title: "Reabilitação Musculoesquelética & Artropatias",
+    category: "Articulações",
+    icon: "Orbit",
+    image: "/src/assets/images/treatment_session_1781281850678.jpg",
+    description: "Tratamento personalizado de disfunções e desgastes nas grandes articulações como ombro, joelho e quadril, focado na recuperação de autonomia.",
     details: [
-      "Mapeamento biomecânico da lombar e quadril",
-      "Liberação miofascial profunda e ventosaterapia",
-      "Fortalecimento do CORE e musculatura estabilizadora",
-      "Orientações de ergonomia profissional e diária"
+      "Prevenção e tratamento de crises de Artrose de joelho e quadril",
+      "Tratamento de tendinites, bursites e lesões ligamentares complexas",
+      "Reabilitação assertiva para restabelecer força, apoio de carga e caminhar livre",
+      "Protocolos específicos com foco no reparo de tecidos moles"
     ]
   },
   {
-    id: "tratamento-cervicalgia",
-    title: "Tratamento de Cervicalgia",
-    category: "Coluna Vertebral",
-    icon: "ArrowUpRight",
-    image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=600&q=80",
-    description: "Redução da tensão no pescoço e ombros, eliminando dores irradiadas, formigamentos e estresse.",
+    id: "exercicios-terapeuticos",
+    title: "Exercícios Terapêuticos & RPG",
+    category: "Movimento Ativo",
+    icon: "Dumbbell",
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80",
+    description: "Fisioterapia ativa! Prescrição exata e acompanhamento de exercícios dinâmicos medicinais para restabelecimento definitivo de funções musculares.",
     details: [
-      "Descompressão de raízes nervosas cervicais",
-      "Mobilização articular cervical e torácica",
-      "Tratamento de cefaleia cervicogênica",
-      "Fortalecimento da musculatura escapular"
+      "RPG (Reeducação Postural Global) aplicado à reabilitação ativa",
+      "Exercícios controlados para fortalecimento muscular profundo do CORE",
+      "Prescrição mecânica voltada para a independência funcional",
+      "Ensino de exercícios preventivos específicos para realizar em casa"
     ]
   },
   {
-    id: "recuperacao-pos-cirurgica",
-    title: "Recuperação Pós-Cirúrgica",
+    id: "pos-cirurgico",
+    title: "Acompanhamento Pós-Cirúrgico",
     category: "Reabilitação",
     icon: "Stethoscope",
-    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80",
-    description: "Acompanhamento cirúrgico especializado para acelerar cicatrizações e ganhar movimentos com segurança.",
-    details: [
-      "Pós-operatório de LCA, próteses de quadril/joelho e ombro",
-      "Drenagem e controle do edema cirúrgico",
-      "Prevenção cuidadosa de aderências e fibroses",
-      "Protocolo progressivo acelerante e seguro"
-    ]
-  },
-  {
-    id: "fortalecimento-muscular",
-    title: "Fortalecimento Muscular",
-    category: "Condicionamento",
-    icon: "Dumbbell",
     image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=600&q=80",
-    description: "Exercícios direcionados para estabilizar articulações frágeis e prevenir novas crises dolorosas.",
+    description: "Protocolos fisioterapêuticos dedicados pós-intervenção cirúrgica de grande e médio porte, regenerando tecidos de forma assistida e inteligente.",
     details: [
-      "Exercícios terapêuticos sem impacto excessivo",
-      "Ativação concêntrica e excêntrica de músculos-chave",
-      "Condicionamento físico para reabilitação sustentada",
-      "Foco na estabilidade articular global"
-    ]
-  },
-  {
-    id: "atendimento-idosos",
-    title: "Atendimento para Idosos",
-    category: "Geriátrica",
-    icon: "Flower",
-    image: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=600&q=80",
-    description: "Abordagem gentil, paciente e ultra focada na autonomia, mobilidade ativa e alegria de viver do idoso.",
-    details: [
-      "Prevenção robusta do risco de quedas em domicílio",
-      "Melhora expressiva da flexibilidade e flexão de joelho/quadril",
-      "Socialização, paciência e acompanhamento empático",
-      "Manutenção da autonomia nas atividades de vida diária"
+      "Pós-operatório de LCA (Joelho), Próteses de Quadril, Joelho e reparo de Ombro",
+      "Gerenciamento de aderências do tecido cicatricial e edema pós-cirúrgico",
+      "Exercícios passivos e ativos assistidos em progressão rigorosa",
+      "Visita clínica dedicada para reaver força dinâmica no menor tempo seguro"
     ]
   }
 ];
 
 export const statistics = [
-  { value: 1000, label: "Pacientes Satisfeitos", suffix: "+", subtext: "vidas transformadas" },
-  { value: 95, label: "Índice de Satisfação", suffix: "%", subtext: "avaliação máxima (5 estrelas)" },
-  { value: 10, label: "Anos de Experiência", suffix: "+", subtext: "dedicação e estudos diários" },
-  { value: 5000, label: "Sessões Realizadas", suffix: "+", subtext: "com foco absoluto no resultado" }
+  { value: 10, label: "Anos de Experiência Clínica", suffix: "+", subtext: "dedicação exclusiva ao paciente" },
+  { value: 100, label: "Atendimento Individual", suffix: "%", subtext: "foco exclusivo em você" },
+  { value: 8, label: "Especialidades em Coluna & Dor", suffix: "", subtext: "fisioterapia baseada em evidência" },
+  { value: 1, label: "Paciente por Sessão", suffix: "", subtext: "atenção e segurança máximas" }
 ];
 
 export const testimonialsList: Testimonial[] = [
@@ -187,7 +145,7 @@ export const testimonialsList: Testimonial[] = [
     name: "Cláudio Meneghetti",
     age: 52,
     condition: "Hérnia de Disco Cervical",
-    text: "Cheguei ao consultório da Dra. Thelma totalmente travado e com formigamento nos braços devido a uma hérnia. Em poucas sessões de terapia manual e RPG, a dor sumiu. Hoje voltei a jogar tênis e não sinto nada! Um atendimento de altíssimo padrão, recomendo a todos na Aclimação.",
+    text: "Cheguei ao consultório da Dra. Thelma totalmente travado e com formigamento nos braços devido a uma hérnia. Em poucas sessões de terapia individual prescrevendo exercícios exatos e RPG, a dor sumiu. Hoje voltei a jogar tênis e não sinto mais nada! Um atendimento de altíssimo padrão, recomendo a todos o consultório dela na Aclimação.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
   },
@@ -196,7 +154,7 @@ export const testimonialsList: Testimonial[] = [
     name: "Regina Helena Sampaio",
     age: 68,
     condition: "Artrose de Joelho",
-    text: "Minha mobilidade estava muito reduzida e eu tinha medo de cair na rua. O atendimento da Dra. Thelma foi um divisor de águas. Ela é extremamente paciente, carinhosa e muito competente. Consigo fazer minhas caminhadas diárias pelo Parque da Aclimação sem dores nos joelhos.",
+    text: "Minha mobilidade estava muito reduzida e eu tinha medo de cair na rua. O atendimento 100% individual da Dra. Thelma foi um divisor de águas. Ela prescreveu exercícios terapêuticos focados nos meus limites. Hoje consigo caminhar feliz pelo Parque da Aclimação sem dores nos joelhos.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80"
   },
@@ -204,8 +162,8 @@ export const testimonialsList: Testimonial[] = [
     id: 3,
     name: "Dr. Gustavo Ribeiro",
     age: 41,
-    condition: "Dor Lombar Crônica",
-    text: "Sou médico e passo horas em cirurgias. A dor lombar era minha companheira diária. Encontrei na clínica da Dra. Thelma um tratamento baseado em evidências científicas sólidas e exercícios corretivos precisos. Hoje não sinto dor lombar e meu rendimento profissional dobrou.",
+    condition: "Dor Lombar e Crônica",
+    text: "Sou médico e passo horas em pé operando. Minha dor lombar era insuportável no final do expediente. Encontrei na clínica da Dra. Thelma um tratamento sério, baseado em evidências profundas com testes físicos minuciosos. A avaliação de 1 hora foi fantástica. Hoje já não sinto dores.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80"
   },
@@ -213,8 +171,8 @@ export const testimonialsList: Testimonial[] = [
     id: 4,
     name: "Letícia Fernandes Machado",
     age: 29,
-    condition: "Pós-Operatório de LCA",
-    text: "Fiz cirurgia no joelho após uma lesão de esporte. Estava com medo da reabilitação, mas o profissionalismo e o ambiente de confiança da clínica me motivaram muito. O plano progressivo deu super certo e recuperei 100% da flexão e força antes do prazo previsto pelo cirurgião.",
+    condition: "Reabilitação de Joelho",
+    text: "Operei o joelho de rompimento de ligamento e estava ansiosa com a fisioterapia. Ter o consultório na Aclimação facilitou muito. Mas o principal diferencial foi que a Dra. Thelma fica do lado 100% da sessão, corrigindo cada movimento do meu exercício terapêutico. Minha evolução foi incrível.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
   },
@@ -222,51 +180,42 @@ export const testimonialsList: Testimonial[] = [
     id: 5,
     name: "Antônio Carlos Macedo",
     age: 74,
-    condition: "Limitação de Mobilidade",
-    text: "O tratamento personalizado restaurou minha dignidade. Eu precisava de auxílio para tarefas básicas de casa. Graças aos exercícios e técnicas humanizadas da Dra. Thelma, hoje ando com firmeza, minha flexibilidade melhorou e me sinto rejuvenescido. O espaço dela transmite paz.",
+    condition: "Limitação Musculoesquelética",
+    text: "Seu tratamento personalizado restaurou minha estabilidade. Graças à cuidadosa fisioterapia ativa da Dra. Thelma, hoje ando com firmeza, minha flexibilidade melhorou e me sinto seguro para subir escadas. O consultório dela tem um cuidado humanizado ímpar.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80"
-  },
-  {
-    id: 6,
-    name: "Patrícia Albuquerque",
-    age: 46,
-    condition: "Tratamento de Cervicalgia & Enxaqueca",
-    text: "Eu sofria com crises absurdas de dor de cabeça vindas do pescoço, que me impediam de trabalhar no computador. A avaliação minuciosa da Dra. Thelma identificou o problema postural e de tensão. Em 4 semanas, as crises zeraram. Ela é realmente diferenciada!",
-    rating: 5,
-    avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&q=80"
   }
 ];
 
 export const differentiatorsList = [
   {
-    title: "Atendimento Individualizado",
-    description: "Sua consulta é exclusiva. Sem concorrência com outros pacientes. A fisioterapeuta acompanha cada execução de perto durante 100% do tempo.",
+    title: "Atendimento 100% Individual",
+    description: "Cada sessão é exclusiva para você. A Dra. Thelma não divide horários e não atende várias salas simultaneamente. Você tem atenção integral o tempo todo.",
     icon: "HeartHandshake"
   },
   {
-    title: "Ambiente Confortável",
-    description: "Localizado em uma área nobre da Aclimação. Projetado com estética relaxante, climatização agradável, música ambiente e privacidade total.",
+    title: "Consultório na Aclimação",
+    description: "Localizado no coração da Aclimação. Um espaço privativo de alto padrão, livre de barulhos, extremamente confortável e planejado para o seu acolhimento.",
     icon: "Coffee"
   },
   {
-    title: "Técnicas Modernas",
-    description: "Atualização científica contínua. Misturamos terapia manual ortopédica, RPG, liberação fascial computadorizada e exercícios integrativos.",
-    icon: "Cpu"
+    title: "Foco Clínico Especializado",
+    description: "Especialidade centrada no diagnóstico mecânico e reabilitação da coluna, distúrbios articulares e reabilitação musculoesquelética complexa.",
+    icon: "Activity"
   },
   {
-    title: "Avaliação Biomecânica Completa",
-    description: "O primeiro atendimento mapeia todas as suas disfunções musculares, articulares e posturais antes de iniciar o protocolo terapêutico.",
+    title: "Avaliação Altamente Detalhada",
+    description: "Na consulta inicial de uma hora, realizamos um diagnóstico funcional profundo para descobrir por que a dor ocorre, avaliando todo o seu corpo de forma sistêmica.",
     icon: "ClipboardCheck"
   },
   {
-    title: "Acompanhamento Contínuo",
-    description: "Suporte direto via WhatsApp corporativo entre as sessões para tirar dúvidas de postura diária, dor súbita ou exercícios domiciliares.",
-    icon: "CheckSquare"
+    title: "Exercícios Terapêuticos Ativos",
+    description: "Sem dependência exclusiva de processos puramente passivos (como os tradicionais 'choquinhos'). Prescrevemos movimentos direcionados que fortalecem e resolvem o problema de vez.",
+    icon: "Dumbbell"
   },
   {
-    title: "Foco Absoluto em Resultados",
-    description: "Não prescrevemos tratamentos sem fim. Nosso objetivo é dar alta para você no menor período de tempo seguro e sustentável possível.",
+    title: "Ampla Experiência Clínica",
+    description: "Mais de 10 anos dedicados à prática clínica real e atualização internacional constante, trazendo soluções consagradas pela ciência para o seu tratamento.",
     icon: "Trophy"
   }
 ];
@@ -274,26 +223,31 @@ export const differentiatorsList = [
 export const faqList: FaqItem[] = [
   {
     id: 1,
-    question: "Quanto tempo dura uma sessão de fisioterapia?",
-    answer: "Cada sessão dura em média de 50 a 60 minutos. É um tempo dedicado exclusivamente a você. Não dividimos horário com outros pacientes, garantindo dedicação total da Dra. Thelma ao seu caso."
+    question: "Como funciona o atendimento individual?",
+    answer: "No consultório da Dra. Thelma, você é o único foco. A sessão dura em média de 50 a 60 minutos e a fisioterapeuta acompanha cada exercício do seu lado. Não existem salas divididas, estagiários ou sessões paralelas. É um compromisso absoluto com a sua reabilitação."
   },
   {
     id: 2,
-    question: "Preciso de encaminhamento médico para iniciar o tratamento?",
-    answer: "Não necessariamente. Como profissionais de primeiro contato autorizados pelo conselho federal, realizamos uma avaliação fisioterapêutica completa (diagnóstico funcional) e traçamos o melhor protocolo clínico. Se o seu caso exigir investigação diagnóstica complementar por imagem ou cirurgião, indicaremos a você."
+    question: "O foco inicial é sempre a avaliação biomecânica?",
+    answer: "Sim! Antes de iniciar qualquer conduta terapêutica, realizamos uma Avaliação Inicial de 1 hora. É nela que mapamos suas dores na coluna ou articulações, amplitudes e deficiências posturais. Esse mapeamento detalhado orienta a elaboração exata de cada exercício terapêutico do seu tratamento."
   },
   {
     id: 3,
-    question: "Vocês atendem pacientes idosos no consultório?",
-    answer: "Sim! Somos altamente especializados em fisioterapia geriátrica. Nosso espaço é totalmente seguro, com acessibilidade facilitada e estruturado para reabilitar o equilíbrio, a força motora e a confiança do idoso, prevenindo quedas e recuperando a qualidade de vida."
+    question: "O consultório na Aclimação é de fácil acesso?",
+    answer: "Sim, o consultório está estrategicamente situado em ponto nobre do bairro da Aclimação, em edifício seguro, extremamente privativo e com acessibilidade garantida. O ambiente foi planejado para resguardar sua privacidade térmica, acústica e emocional."
   },
   {
     id: 4,
-    question: "Fazem tratamento especializado para dores crônicas na coluna?",
-    answer: "Absolutamente. O tratamento de patologias da coluna vertebral (hérnias de disco, lombalgias, cervicalgias, escolioses) é um dos nossos maiores diferenciais clínicos. Unimos técnicas de terapia manual, RPG, descompressão postural e fortalecimento corretivo profundo."
+    question: "Como é o tratamento voltado para Coluna e Articulações?",
+    answer: "O foco é aliviar a compressão mecânica e remodelar os tecidos por meio de terapia manual especializada, RPG e exercícios terapêuticos específicos. O fortalecimento muscular profundo impede que dores de coluna (hérnias, lombalgia) ou articulações (joelho, ombro) persistam no cotidiano."
   },
   {
     id: 5,
+    question: "O tratamento inclui exercícios ou fico apenas em aparelhos?",
+    answer: "Privilegiamos a fisioterapia ativa. Aparelhos terapêuticos analgésicos só são utilizados se houver real e temporária indicação clínica para alívio de dor aguda. O coração do tratamento definitivo baseia-se em exercícios terapêuticos personalizados para restaurar de fato sua função."
+  },
+  {
+    id: 6,
     question: "Como funciona para agendar uma avaliação inicial?",
     answer: "O agendamento é feito de forma simples e rápida clicando em nossos botões do WhatsApp. Você conversará diretamente conosco para escolher o melhor dia e horário na nossa clínica no bairro da Aclimação. Responderemos imediatamente!"
   }

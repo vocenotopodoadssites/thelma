@@ -48,7 +48,7 @@ export default function Differentiators() {
           </h2>
           <div className="h-1 w-16 bg-gold-400 mx-auto mt-4 rounded-full" />
           <p className="text-slate-400 font-sans mt-4 font-light text-base sm:text-lg">
-            Muito além do básico. Estruturamos nosso consultório odontológico e de fisioterapia para oferecer uma experiência verdadeiramente diferenciada de cuidado integral.
+            Muito além do básico. Estruturamos nosso consultório de fisioterapia na Aclimação para oferecer uma experiência verdadeiramente individualizada e resolutiva de reabilitação.
           </p>
         </div>
 

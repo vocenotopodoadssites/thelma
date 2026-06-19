@@ -71,11 +71,11 @@ export default function MapSection() {
             {/* Quick Contact Line */}
             <div className="pt-6 border-t border-slate-100 text-left">
               <a
-                href="tel:+5511987654321" 
+                href="tel:+5511960403390" 
                 className="flex items-center space-x-1.5 text-xs font-bold text-brand-600 hover:text-brand-700"
               >
                 <Phone className="h-4 w-4" />
-                <span>Telefone Direto: (11) 98765-4321</span>
+                <span>Telefone Direto: (11) 96040-3390</span>
               </a>
             </div>
 

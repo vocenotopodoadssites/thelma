@@ -12,15 +12,15 @@ import LucideIcon from './LucideIcon.tsx';
 export default function Services() {
   const [selectedCategory, setSelectedCategory] = useState('Todos');
 
-  const categories = ['Todos', 'Coluna Vertebral', 'Reabilitação', 'Terapias de Dor', 'Geriátrica'];
+  const categories = ['Todos', 'Diagnóstico', 'Coluna Vertebral', 'Articulações', 'Movimento Ativo', 'Reabilitação'];
 
   const filteredServices = selectedCategory === 'Todos'
     ? servicesList
     : servicesList.filter(service => service.category === selectedCategory);
 
   const handleBooking = (serviceName: string) => {
-    const text = `Olá, Dra. Thelma! Gostaria de agendar uma avaliação clínica para o tratamento de: ${serviceName}.`;
-    window.open(`https://wa.me/5511987654321?text=${encodeURIComponent(text)}`, '_blank');
+    const text = `Olá, Dra. Thelma! Gostaria de falar sobre o tratamento para: ${serviceName}.`;
+    window.open(`https://wa.me/5511960403390?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   return (
@@ -120,7 +120,7 @@ export default function Services() {
                     onClick={() => handleBooking(service.title)}
                     className="w-full py-2.5 px-4 bg-brand-50 hover:bg-brand-500 text-brand-600 hover:text-white rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 flex items-center justify-center space-x-1.5 cursor-pointer group/btn"
                   >
-                    <span>Pre-agendar Sessão</span>
+                    <span>Falar no WhatsApp</span>
                     <ArrowRight className="h-3.5 w-3.5 group-hover/btn:translate-x-1 transition-transform" />
                   </button>
                 </div>
@@ -128,11 +128,11 @@ export default function Services() {
             ))}
           </AnimatePresence>
         </motion.div>
-
+ 
         {/* Informative advice */}
         <div className="mt-12 text-center text-xs text-slate-500 flex items-center justify-center space-x-2">
           <Sparkles className="h-4.5 w-4.5 text-gold-400" />
-          <span>Sua dúvida não se encaixa nas categorias acima? Agende com a Dra. para uma análise inicial de sintomas.</span>
+          <span>Sua dúvida não se encaixa nas categorias acima? Entre em contato para falar diretamente com a Dra. Thelma.</span>
         </div>
 
       </div>

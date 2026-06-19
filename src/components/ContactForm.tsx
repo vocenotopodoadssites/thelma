@@ -58,7 +58,7 @@ export default function ContactForm() {
       
       // Auto-open WhatsApp after brief delay
       setTimeout(() => {
-        window.open(`https://wa.me/5511987654321?text=${textMessage}`, '_blank');
+        window.open(`https://wa.me/5511960403390?text=${textMessage}`, '_blank');
       }, 1000);
 
     }, 1200);
@@ -317,7 +317,7 @@ export default function ContactForm() {
                         const symptomText = formData.symptoms ? `• Sintomas relatados: ${formData.symptoms}` : '';
                         
                         const textMessage = encodeURIComponent(`${titleText}${nameText}${phoneText}${serviceText}${shiftText}${symptomText}`);
-                        window.open(`https://wa.me/5511987654321?text=${textMessage}`, '_blank');
+                        window.open(`https://wa.me/5511960403390?text=${textMessage}`, '_blank');
                       }}
                       className="inline-flex items-center space-x-2 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-xl text-xs sm:text-sm shadow-md transition-colors cursor-pointer"
                     >

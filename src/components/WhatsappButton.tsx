@@ -24,7 +24,7 @@ export default function WhatsappButton() {
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent('Olá, Dra. Thelma! Gostaria de tirar dúvidas / agendar uma avaliação física via WhatsApp.');
-    window.open(`https://wa.me/5511987654321?text=${message}`, '_blank');
+    window.open(`https://wa.me/5511960403390?text=${message}`, '_blank');
   };
 
   return (

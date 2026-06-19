@@ -36,8 +36,8 @@ export default function Navbar() {
   ];
 
   const handleWhatsApp = () => {
-    const message = encodeURIComponent('Olá, Dra. Thelma! Gostaria de agendar uma avaliação na clínica da Aclimação.');
-    window.open(`https://wa.me/5511987654321?text=${message}`, '_blank');
+    const message = encodeURIComponent('Olá, Dra. Thelma! Gostaria de conversar sobre um tratamento na clínica da Aclimação.');
+    window.open(`https://wa.me/5511960403390?text=${message}`, '_blank');
   };
 
   return (
@@ -58,8 +58,8 @@ export default function Navbar() {
                 <span className="block text-lg font-serif font-semibold tracking-wide text-brand-900 group-hover:text-brand-500 transition-colors">
                   Dra. Thelma Soares
                 </span>
-                <span className="block text-[9px] uppercase tracking-[0.12em] text-[#71a369] font-bold">
-                  Fisioterapia Clínica • Aclimação
+                <span className="block text-[8px] md:text-[9px] uppercase tracking-[0.05em] text-[#71a369] font-bold max-w-[190px] md:max-w-[320px] leading-tight mt-0.5">
+                  Venha sentir em seu corpo e em sua vida os benefícios da Fisioterapia
                 </span>
               </div>
             </a>
@@ -80,11 +80,11 @@ export default function Navbar() {
             {/* CTA and Phone */}
             <div className="hidden lg:flex items-center space-x-4">
               <a
-                href="tel:+5511987654321"
+                href="tel:+5511960403390"
                 className="flex items-center space-x-1.5 text-sm font-semibold text-brand-600 hover:text-brand-700 transition-colors px-3 py-1.5 rounded-full hover:bg-brand-50"
               >
                 <Phone className="h-4 w-4" />
-                <span>(11) 98765-4321</span>
+                <span>(11) 96040-3390</span>
               </a>
               <motion.button
                 whileHover={{ scale: 1.03 }}
@@ -93,14 +93,14 @@ export default function Navbar() {
                 className="flex items-center space-x-2 bg-gradient-to-r from-brand-500 to-brand-600 text-white font-medium text-sm px-5 py-2.5 rounded-full shadow-lg shadow-brand-500/25 hover:shadow-brand-500/45 transition-all cursor-pointer"
               >
                 <Calendar className="h-4 w-4" />
-                <span>Agendar Avaliação</span>
+                <span>Falar no WhatsApp</span>
               </motion.button>
             </div>
 
             {/* Mobile Hamburger */}
             <div className="flex lg:hidden items-center space-x-2">
               <a
-                href="tel:+5511987654321"
+                href="tel:+5511960403390"
                 className="flex items-center justify-center h-10 w-10 text-brand-600 bg-brand-50 rounded-full"
                 title="Ligar para a clínica"
               >
@@ -152,11 +152,11 @@ export default function Navbar() {
 
               <div className="space-y-4 border-t border-slate-100 pt-6">
                 <a
-                  href="tel:+5511987654321"
+                  href="tel:+5511960403390"
                   className="flex items-center space-x-3 text-slate-700 font-semibold p-3 rounded-xl bg-slate-50 hover:bg-slate-100"
                 >
                   <Phone className="h-5 w-5 text-brand-500" />
-                  <span>Ligar: (11) 98765-4321</span>
+                  <span>Ligar: (11) 96040-3390</span>
                 </a>
                 <button
                   onClick={() => {
@@ -166,7 +166,7 @@ export default function Navbar() {
                   className="w-full flex items-center justify-center space-x-2 bg-gradient-to-r from-brand-500 to-brand-600 text-white font-medium py-3.5 rounded-xl shadow-lg shadow-brand-500/25 cursor-pointer"
                 >
                   <Calendar className="h-5 w-5" />
-                  <span>Agendar Avaliação</span>
+                  <span>Falar no WhatsApp</span>
                 </button>
                 <div className="text-center text-xs text-slate-400">
                   {therapistData.crefito}

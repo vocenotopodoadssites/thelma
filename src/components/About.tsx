@@ -11,8 +11,8 @@ import thelmaPortrait from '../assets/images/thelma_face_1781281835065.jpg';
 
 export default function About() {
   const handleWhatsApp = () => {
-    const message = encodeURIComponent('Olá, Dra. Thelma! Gostaria de conversar sobre meu caso clínico e agendar uma primeira avaliação.');
-    window.open(`https://wa.me/5511987654321?text=${message}`, '_blank');
+    const message = encodeURIComponent('Olá, Dra. Thelma! Gostaria de conversar sobre meu caso clínico e agendar uma consulta.');
+    window.open(`https://wa.me/5511960403390?text=${message}`, '_blank');
   };
 
   return (
@@ -77,13 +77,13 @@ export default function About() {
 
             <div className="space-y-4 text-slate-600 font-light text-base leading-relaxed">
               <p>
-                Acreditamos que cada paciente possui uma história singular. Ouvir com atenção o seu relato e examinar minuciosamente como seu corpo se move é o pilar de uma recuperação acelerada.
+                Acreditamos em uma abordagem séria e minuciosa. Sua primeira consulta é uma <strong>Avaliação Biomecânica Detalhada de 1 hora</strong> para identificar os desequilíbrios mecânicos estruturais e a causa primária das dores.
               </p>
               <p className="font-medium text-slate-800 font-sans italic border-l-2 border-gold-400 pl-4 bg-gold-50/45 py-3 rounded-r-xl">
-                "Meu compromisso não é apenas aliviar a dor do momento, mas fornecer as ferramentas de fortalecimento para que ela nunca mais controle a sua rotina ou restrinja sua autonomia."
+                "Aqui, você nunca será 'abandonado debaixo de um choquinho' enquanto o profissional atende outras salas. Meu consultório na Aclimação promove um tratamento 100% individual, combinando terapias manuais refinadas e exercícios terapêuticos inteligentes específicos para você."
               </p>
               <p>
-                No consultório da Aclimação, você não é apenas mais uma ficha clínica. Nosso foco é o atendimento dedicado integralmente à sua reabilitação, utilizando técnicas baseadas em evidências científicas de ponta em um ambiente reservado e tranquilo.
+                O foco é a <strong>fisioterapia ativa</strong>. Prescrevemos movimentos direcionados ao invés de tratamentos passivos genéricos, fornecendo o fortalecimento exato para blindar sua coluna e articulações, devolvendo a autonomia que você de fato merece.
               </p>
             </div>
 

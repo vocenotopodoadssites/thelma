@@ -9,8 +9,8 @@ import { MessageSquare, ArrowRight } from 'lucide-react';
 
 export default function CtaFinal() {
   const handleWhatsApp = () => {
-    const text = encodeURIComponent('Olá, gostaria de dar início ao meu tratamento e agendar uma primeira avaliação clínica.');
-    window.open(`https://wa.me/5511987654321?text=${text}`, '_blank');
+    const text = encodeURIComponent('Olá, gostaria de dar início ao meu tratamento e agendar uma primeira consulta clínica.');
+    window.open(`https://wa.me/5511960403390?text=${text}`, '_blank');
   };
 
   return (

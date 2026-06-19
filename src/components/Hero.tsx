@@ -11,7 +11,7 @@ import clinicHero from '../assets/images/clinic_hero_1781281818546.jpg';
 export default function Hero() {
   const handleWhatsApp = (text: string) => {
     const msg = encodeURIComponent(text);
-    window.open(`https://wa.me/5511987654321?text=${msg}`, '_blank');
+    window.open(`https://wa.me/5511960403390?text=${msg}`, '_blank');
   };
 
   return (
@@ -26,21 +26,6 @@ export default function Hero() {
           {/* Hero Left Content */}
           <div className="lg:col-span-7 flex flex-col space-y-6 sm:space-y-8 text-left">
             
-            {/* Tag Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="inline-flex self-start items-center space-x-2 bg-white border border-brand-100 px-4 py-1.5 rounded-full shadow-sm text-xs sm:text-sm font-semibold text-brand-600"
-            >
-              <span className="flex h-2 w-2 relative">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
-              </span>
-              <MapPin className="h-3.5 w-3.5 text-brand-500 shrink-0" />
-              <span>Consultório Premium no Bairro Aclimação, SP</span>
-            </motion.div>
-
             {/* Main Brand Title */}
             <div className="space-y-4">
               <motion.h1
@@ -61,7 +46,7 @@ export default function Hero() {
                 transition={{ delay: 0.2, duration: 0.6 }}
                 className="text-slate-600 font-sans text-base sm:text-lg lg:text-xl font-light leading-relaxed max-w-2xl"
               >
-                Tratamentos personalizados de fisioterapia para aliviar dores, recuperar movimentos e melhorar sua qualidade de vida. Atendimento VIP, humanizado e focado em reabilitação sustentável.
+                Tratamentos personalizados com atendimento individualizado para aliviar dores, recuperar movimentos e devolver sua qualidade de vida, de forma humanizada e focada em reabilitação de excelência.
               </motion.p>
             </div>
 
@@ -73,11 +58,11 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center"
             >
               <button
-                onClick={() => handleWhatsApp('Olá! Vi o site e gostaria de agendar uma avaliação fisioterapêutica com a Dra. Thelma.')}
+                onClick={() => handleWhatsApp('Olá! Vi o site e gostaria de conversar com a Dra. Thelma sobre os tratamentos.')}
                 className="group flex items-center justify-center space-x-2 bg-gradient-to-r from-brand-500 to-brand-600 text-white font-medium px-8 py-4 rounded-full shadow-xl shadow-brand-500/25 hover:shadow-brand-500/40 hover:-translate-y-0.5 transition-all cursor-pointer"
               >
                 <Calendar className="h-5 w-5" />
-                <span>Agendar Avaliação</span>
+                <span>Falar no WhatsApp</span>
               </button>
 
               <button
@@ -87,27 +72,6 @@ export default function Hero() {
                 <MessageSquare className="h-5 w-5 text-brand-500" />
                 <span>Falar no WhatsApp</span>
               </button>
-            </motion.div>
-
-            {/* Elite Trust Signatures */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.85 }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-              className="grid grid-cols-2 sm:grid-cols-3 gap-4 xl:gap-6 border-t border-slate-100 pt-6 max-w-xl"
-            >
-              <div className="flex items-center space-x-2.5">
-                <ShieldCheck className="h-5 w-5 text-gold-500 shrink-0" />
-                <span className="text-xs font-semibold text-slate-700 leading-tight">Plano Clínico Individualizado</span>
-              </div>
-              <div className="flex items-center space-x-2.5">
-                <Award className="h-5 w-5 text-gold-500 shrink-0" />
-                <span className="text-xs font-semibold text-slate-700 leading-tight">Dra. Graduada e Pós-Graduada</span>
-              </div>
-              <div className="flex items-center space-x-2.5 col-span-2 sm:col-span-1">
-                <span className="text-brand-500 font-serif font-black text-xs bg-brand-50 px-2 py-1 rounded">CREFITO 3</span>
-                <span className="text-xs font-semibold text-slate-700 leading-tight">Registro Ativo e Regular</span>
-              </div>
             </motion.div>
           </div>
 
@@ -134,7 +98,7 @@ export default function Hero() {
               <div className="absolute bottom-5 left-5 right-5 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-white/50 flex justify-between items-center">
                 <div>
                   <h4 className="text-sm font-bold text-slate-800 font-serif leading-none">Dra. Thelma S. Soares</h4>
-                  <p className="text-[10px] text-brand-500 uppercase font-bold tracking-wider mt-1.5">CREFITO-3 248.915-F</p>
+                  <p className="text-[10px] text-brand-500 uppercase font-bold tracking-wider mt-1.5">CREFITO-3 21.590-F</p>
                 </div>
                 <div className="h-9 w-9 rounded-full bg-brand-50 flex items-center justify-center">
                   <Award className="h-5 w-5 text-brand-500" />

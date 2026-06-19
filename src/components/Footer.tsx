@@ -19,7 +19,7 @@ export default function Footer() {
       "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=600&q=80",
       "@id": "",
       "url": window.location.origin,
-      "telephone": "+5511987654321",
+      "telephone": "+5511960403390",
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
@@ -137,7 +137,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <span className="text-brand-400 shrink-0 select-none">📞</span>
-                <a href="tel:+5511987654321" className="hover:text-brand-400 transition-colors">(11) 98765-4321</a>
+                <a href="tel:+5511960403390" className="hover:text-brand-400 transition-colors">(11) 96040-3390</a>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="text-brand-400 shrink-0 select-none">✉️</span>

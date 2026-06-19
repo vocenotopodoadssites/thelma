@@ -89,7 +89,7 @@ export default function FAQ() {
           <button
             onClick={() => {
               const msg = encodeURIComponent("Olá, Dra. Thelma! Tenho uma dúvida sobre fisioterapia que não estava no FAQ: ");
-              window.open(`https://wa.me/5511987654321?text=${msg}`, '_blank');
+              window.open(`https://wa.me/5511960403390?text=${msg}`, '_blank');
             }}
             className="mt-4 text-brand-600 font-bold hover:text-brand-700 text-sm flex items-center justify-center space-x-1 mx-auto group cursor-pointer"
           >

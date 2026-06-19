@@ -10,6 +10,7 @@ import Navbar from './components/Navbar.tsx';
 import Hero from './components/Hero.tsx';
 import Benefits from './components/Benefits.tsx';
 import About from './components/About.tsx';
+import Philosophy from './components/Philosophy.tsx';
 import Services from './components/Services.tsx';
 import Stats from './components/Stats.tsx';
 import Testimonials from './components/Testimonials.tsx';
@@ -55,6 +56,9 @@ export default function App() {
 
             {/* 3. Authoritative Emotional Story (Sobre a Clínica) */}
             <About />
+
+            {/* Philosophy: Mission, Vision, and Values */}
+            <Philosophy />
 
             {/* 4. Filtered Interactive Services Catalog */}
             <Services />
